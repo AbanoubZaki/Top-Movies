@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Top Movies
+
+  Created by Abanoub Zaki on 13/11/2022.
+  
+*/
+
+"error_view_controller_message" = "Unknown error has occurred!";
