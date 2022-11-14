@@ -21,6 +21,7 @@ final class HomeModuleBuilder {
         let presenter = HomePresenter(view: view,
                                       interactor: interactor,
                                       router: router)
+        
         view.presenter = presenter
         interactor.presenter = presenter
         return view
