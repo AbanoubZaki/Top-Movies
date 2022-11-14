@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		04E6FE19C549B78143D96A59 /* Pods_Top_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EF7A6C5AC750E18E3E33A6 /* Pods_Top_Movies.framework */; };
+		F23274D729219DC70007630B /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23274D629219DC70007630B /* MovieTableViewCell.swift */; };
+		F23274DA29219F630007630B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23274D929219F630007630B /* Movie.swift */; };
 		F29BF681292162C0007EB09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF680292162C0007EB09E /* AppDelegate.swift */; };
-		F29BF683292162C0007EB09E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF682292162C0007EB09E /* SceneDelegate.swift */; };
 		F29BF68A292162C3007EB09E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29BF689292162C3007EB09E /* Assets.xcassets */; };
 		F29BF68D292162C3007EB09E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29BF68B292162C3007EB09E /* LaunchScreen.storyboard */; };
 		F29BF6A429216AD9007EB09E /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF69A29216AD9007EB09E /* HomePresenter.swift */; };
@@ -28,9 +29,10 @@
 		3433F92E916187022A2F02FB /* Pods-Top Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top Movies.debug.xcconfig"; path = "Target Support Files/Pods-Top Movies/Pods-Top Movies.debug.xcconfig"; sourceTree = "<group>"; };
 		91EF7A6C5AC750E18E3E33A6 /* Pods_Top_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Top_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC6BA293CAFE6FD20EFDE40 /* Pods-Top Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top Movies.release.xcconfig"; path = "Target Support Files/Pods-Top Movies/Pods-Top Movies.release.xcconfig"; sourceTree = "<group>"; };
+		F23274D629219DC70007630B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		F23274D929219F630007630B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		F29BF67D292162C0007EB09E /* Top Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29BF680292162C0007EB09E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F29BF682292162C0007EB09E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F29BF689292162C3007EB09E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F29BF68C292162C3007EB09E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F29BF68E292162C3007EB09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F23274D829219F580007630B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F23274D929219F630007630B /* Movie.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		F29BF674292162C0007EB09E = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				F29BF680292162C0007EB09E /* AppDelegate.swift */,
-				F29BF682292162C0007EB09E /* SceneDelegate.swift */,
 				F29BF68B292162C3007EB09E /* LaunchScreen.storyboard */,
 				F29BF6AF29217AAA007EB09E /* Common */,
 				F29BF694292166CF007EB09E /* Modules */,
@@ -119,10 +128,10 @@
 		F29BF69829216AD9007EB09E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F29BF69929216AD9007EB09E /* Presenter */,
 				F29BF69B29216AD9007EB09E /* HomeModuleProtocols.swift */,
 				F29BF69C29216AD9007EB09E /* HomeModuleBuilder.swift */,
 				F29BF69D29216AD9007EB09E /* View */,
+				F29BF69929216AD9007EB09E /* Presenter */,
 				F29BF6A029216AD9007EB09E /* Interactor */,
 				F29BF6A229216AD9007EB09E /* Router */,
 			);
@@ -143,6 +152,7 @@
 			children = (
 				F29BF69E29216AD9007EB09E /* HomeViewController.swift */,
 				F29BF69F29216AD9007EB09E /* HomeViewController.storyboard */,
+				F23274D629219DC70007630B /* MovieTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +185,7 @@
 		F29BF6AF29217AAA007EB09E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F23274D829219F580007630B /* Entities */,
 				F29BF6B029217AB2007EB09E /* Views */,
 			);
 			path = Common;
@@ -335,13 +346,14 @@
 			files = (
 				F29BF6A629216AD9007EB09E /* HomeModuleBuilder.swift in Sources */,
 				F29BF6A529216AD9007EB09E /* HomeModuleProtocols.swift in Sources */,
+				F23274DA29219F630007630B /* Movie.swift in Sources */,
 				F29BF6AE29217A35007EB09E /* R.generated.swift in Sources */,
 				F29BF6A929216AD9007EB09E /* HomeInteractor.swift in Sources */,
 				F29BF681292162C0007EB09E /* AppDelegate.swift in Sources */,
-				F29BF683292162C0007EB09E /* SceneDelegate.swift in Sources */,
 				F29BF6A729216AD9007EB09E /* HomeViewController.swift in Sources */,
 				F29BF6B229217AC8007EB09E /* ErrorViewController.swift in Sources */,
 				F29BF6AA29216AD9007EB09E /* HomeRouter.swift in Sources */,
+				F23274D729219DC70007630B /* MovieTableViewCell.swift in Sources */,
 				F29BF6A429216AD9007EB09E /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,7 +507,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abanoub.zaki.Top-Movies";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abanoub-zaki.top-movies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -524,7 +536,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abanoub.zaki.Top-Movies";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abanoub-zaki.top-movies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
