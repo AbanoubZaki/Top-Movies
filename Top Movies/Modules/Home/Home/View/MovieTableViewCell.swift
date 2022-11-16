@@ -16,7 +16,7 @@ class MovieTableViewCell: UITableViewCell {
     
     func bind(movie: Movie, isAddedToWatchList: Bool) {
         // TODO: set image
-        movieTitle.text = movie.title
+        movieTitle.text = movie.original_title
         movieOverView.text = movie.overview
         addedToWatchListLabel.text = R.string.localizable.added_to_watchlist()
         addedToWatchListLabel.isHidden = !isAddedToWatchList

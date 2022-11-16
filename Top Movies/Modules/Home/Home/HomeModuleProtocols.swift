@@ -13,6 +13,7 @@ protocol HomeRouterProtocol: AnyObject {
 
 protocol HomeInteractorProtocol: AnyObject {
     var presenter: HomeInteractorToPresenterProtocol? { get set }
+    func getPopularMovies()
 }
 
 protocol HomeInteractorToPresenterProtocol: AnyObject {

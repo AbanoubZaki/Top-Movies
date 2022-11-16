@@ -29,10 +29,10 @@ final class HomePresenter {
 extension HomePresenter: HomeViewToPresenterProtocol {
     
     func initializeMovies() {
-        self.movies = [
-            Movie(id: "okay", title: "Iron Man 2", overview: "Okay okay okay Okay okay okay Okay okay okay Okay okay okay Okay okay okay"),
+        movies = [
+            Movie(id: "okay", original_title: "Iron Man 2", overview: "Okay okay okay Okay okay okay Okay okay okay Okay okay okay Okay okay okay"),
         ]
-        //        self.movies = interactor.getAllMovies()
+        interactor.getPopularMovies()
         view?.reloadData()
     }
     

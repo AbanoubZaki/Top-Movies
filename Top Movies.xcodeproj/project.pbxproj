@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04E6FE19C549B78143D96A59 /* Pods_Top_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EF7A6C5AC750E18E3E33A6 /* Pods_Top_Movies.framework */; };
+		F21EDD432922AC8C0053F2A8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EDD422922AC8C0053F2A8 /* ApiManager.swift */; };
+		F21EDD48292464DC0053F2A8 /* PopularMoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EDD47292464DC0053F2A8 /* PopularMoviesResponse.swift */; };
 		F23274D729219DC70007630B /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23274D629219DC70007630B /* MovieTableViewCell.swift */; };
 		F23274DA29219F630007630B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23274D929219F630007630B /* Movie.swift */; };
 		F29BF681292162C0007EB09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF680292162C0007EB09E /* AppDelegate.swift */; };
@@ -29,6 +31,8 @@
 		3433F92E916187022A2F02FB /* Pods-Top Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top Movies.debug.xcconfig"; path = "Target Support Files/Pods-Top Movies/Pods-Top Movies.debug.xcconfig"; sourceTree = "<group>"; };
 		91EF7A6C5AC750E18E3E33A6 /* Pods_Top_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Top_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC6BA293CAFE6FD20EFDE40 /* Pods-Top Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top Movies.release.xcconfig"; path = "Target Support Files/Pods-Top Movies/Pods-Top Movies.release.xcconfig"; sourceTree = "<group>"; };
+		F21EDD422922AC8C0053F2A8 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F21EDD47292464DC0053F2A8 /* PopularMoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesResponse.swift; sourceTree = "<group>"; };
 		F23274D629219DC70007630B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		F23274D929219F630007630B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		F29BF67D292162C0007EB09E /* Top Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,9 +81,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F21EDD412922AC750053F2A8 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				F21EDD422922AC8C0053F2A8 /* ApiManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		F21EDD46292464BB0053F2A8 /* ApiResponses */ = {
+			isa = PBXGroup;
+			children = (
+				F21EDD47292464DC0053F2A8 /* PopularMoviesResponse.swift */,
+			);
+			path = ApiResponses;
+			sourceTree = "<group>";
+		};
 		F23274D829219F580007630B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				F21EDD46292464BB0053F2A8 /* ApiResponses */,
 				F23274D929219F630007630B /* Movie.swift */,
 			);
 			path = Entities;
@@ -185,6 +206,7 @@
 		F29BF6AF29217AAA007EB09E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F21EDD412922AC750053F2A8 /* ApiManager */,
 				F23274D829219F580007630B /* Entities */,
 				F29BF6B029217AB2007EB09E /* Views */,
 			);
@@ -344,10 +366,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21EDD48292464DC0053F2A8 /* PopularMoviesResponse.swift in Sources */,
 				F29BF6A629216AD9007EB09E /* HomeModuleBuilder.swift in Sources */,
 				F29BF6A529216AD9007EB09E /* HomeModuleProtocols.swift in Sources */,
 				F23274DA29219F630007630B /* Movie.swift in Sources */,
 				F29BF6AE29217A35007EB09E /* R.generated.swift in Sources */,
+				F21EDD432922AC8C0053F2A8 /* ApiManager.swift in Sources */,
 				F29BF6A929216AD9007EB09E /* HomeInteractor.swift in Sources */,
 				F29BF681292162C0007EB09E /* AppDelegate.swift in Sources */,
 				F29BF6A729216AD9007EB09E /* HomeViewController.swift in Sources */,
